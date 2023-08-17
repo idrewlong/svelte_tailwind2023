@@ -4,6 +4,10 @@
   function toggleNavbar() {
     showMenu = !showMenu;
   }
+
+  function closeNavbar() {
+    showMenu = false;
+  }
 </script>
 
 <div class="bg-white">
@@ -38,10 +42,10 @@
               ? 'flex'
               : 'hidden'}"
       >
-        <a class="text-gray duration-200 hover:text-forest hover:underline ease-in-out" href="/about">About Us</a>
-        <a class="text-gray  duration-200 hover:text-forest hover:underline ease-in-out" href="/portfolio">Services</a>
-        <a class="text-gray  duration-200 hover:text-forest hover:underline ease-in-out" href="/multi-media">Work</a>
-        <a class="text-gray  duration-200 hover:text-forest hover:underline ease-in-out" href="/contact">Contact</a>
+        <a class="text-grey-800 duration-500 hover:text-orange-400 hover:underline ease-in-out" href="/about" on:click={closeNavbar}>About</a>
+        <a class="text-grey-800 duration-500 hover:text-orange-400 hover:underline ease-in-out" href="/portfolio" on:click={closeNavbar}>Portfolio</a>
+        <a class="text-grey-800 duration-500 hover:text-orange-400 hover:underline ease-in-out" href="/multi-media" on:click={closeNavbar}>Multi-Media</a>
+        <a class="text-grey-800 duration-500 hover:text-orange-400 hover:underline ease-in-out" href="/contact" on:click={closeNavbar}>Contact</a>
       </div>
     </nav>
   </div>
